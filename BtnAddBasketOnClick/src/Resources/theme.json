@@ -1,0 +1,48 @@
+{
+  "name": "BtnAddBasketOnClick",
+  "author": "PascalSt",
+  "description": {
+    "en-GB": "Changing button 'Add to shopping cart' when clicked",
+    "de-DE": "Ändert den Button 'Zum Warenkorb hinzufügen' beim Anklicken"
+  },
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@BtnAddBasketOnClick"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/btn-add-basket-on-click.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "blocks": {
+      "addToBasketConfig": {
+        "label": {
+          "en-GB": "Configure button 'Add to shopping cart' on click",
+          "de-DE": "Konfiguration des Button 'Zum Warenkorb hinzufügen' bei Anklicken"
+        }
+      }
+    },
+    "fields": {
+      "buyBtnText": {
+        "label": {
+          "en-GB": "Changed text on click",
+          "de-DE": "Geänderter Text nach Anklicken"
+        },
+      "type": "text",
+      "value": "Adding to cart",
+      "editable": true,
+      "block": "addToBasketConfig"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "swag/btn-add-basket-on-click",
+  "description": "Configuration of button 'Add to shopping cart' - change color on click",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "BtnAddBasketOnClick\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "BtnAddBasketOnClick\\BtnAddBasketOnClick",
+    "label": {
+      "de-DE": "Theme BtnAddBasketOnClick plugin",
+      "en-GB": "Theme BtnAddBasketOnClick plugin"
+    }
+  }
+}
